@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		F17344151ECB6B7000A21A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17344141ECB6B7000A21A5C /* AppDelegate.swift */; };
-		F17344171ECB6B7000A21A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17344161ECB6B7000A21A5C /* ViewController.swift */; };
+		F17344171ECB6B7000A21A5C /* BucketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17344161ECB6B7000A21A5C /* BucketListTableViewController.swift */; };
 		F173441A1ECB6B7000A21A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17344181ECB6B7000A21A5C /* Main.storyboard */; };
 		F173441C1ECB6B7000A21A5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F173441B1ECB6B7000A21A5C /* Assets.xcassets */; };
 		F173441F1ECB6B7000A21A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F173441D1ECB6B7000A21A5C /* LaunchScreen.storyboard */; };
+		F17344271ECB6CA900A21A5C /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17344261ECB6CA900A21A5C /* AddItemViewController.swift */; };
+		F17344291ECB6E4000A21A5C /* AddItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17344281ECB6E4000A21A5C /* AddItemDelegate.swift */; };
+		F173442B1ECB717A00A21A5C /* EditItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F173442A1ECB717A00A21A5C /* EditItemDelegate.swift */; };
+		F17344341ECB752000A21A5C /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F17344321ECB752000A21A5C /* BucketList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F17344111ECB6B7000A21A5C /* core_data_bucket_list_may_16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = core_data_bucket_list_may_16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17344141ECB6B7000A21A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F17344161ECB6B7000A21A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F17344161ECB6B7000A21A5C /* BucketListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableViewController.swift; sourceTree = "<group>"; };
 		F17344191ECB6B7000A21A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F173441B1ECB6B7000A21A5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F173441E1ECB6B7000A21A5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F17344201ECB6B7000A21A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F17344261ECB6CA900A21A5C /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		F17344281ECB6E4000A21A5C /* AddItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemDelegate.swift; sourceTree = "<group>"; };
+		F173442A1ECB717A00A21A5C /* EditItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditItemDelegate.swift; sourceTree = "<group>"; };
+		F17344331ECB752000A21A5C /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				F17344141ECB6B7000A21A5C /* AppDelegate.swift */,
-				F17344161ECB6B7000A21A5C /* ViewController.swift */,
+				F17344161ECB6B7000A21A5C /* BucketListTableViewController.swift */,
+				F17344261ECB6CA900A21A5C /* AddItemViewController.swift */,
 				F17344181ECB6B7000A21A5C /* Main.storyboard */,
 				F173441B1ECB6B7000A21A5C /* Assets.xcassets */,
 				F173441D1ECB6B7000A21A5C /* LaunchScreen.storyboard */,
 				F17344201ECB6B7000A21A5C /* Info.plist */,
+				F17344281ECB6E4000A21A5C /* AddItemDelegate.swift */,
+				F173442A1ECB717A00A21A5C /* EditItemDelegate.swift */,
+				F17344321ECB752000A21A5C /* BucketList.xcdatamodeld */,
 			);
 			path = core_data_bucket_list_may_16;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17344171ECB6B7000A21A5C /* ViewController.swift in Sources */,
+				F173442B1ECB717A00A21A5C /* EditItemDelegate.swift in Sources */,
+				F17344341ECB752000A21A5C /* BucketList.xcdatamodeld in Sources */,
+				F17344171ECB6B7000A21A5C /* BucketListTableViewController.swift in Sources */,
 				F17344151ECB6B7000A21A5C /* AppDelegate.swift in Sources */,
+				F17344271ECB6CA900A21A5C /* AddItemViewController.swift in Sources */,
+				F17344291ECB6E4000A21A5C /* AddItemDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,8 +320,22 @@
 				F17344251ECB6B7000A21A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F17344321ECB752000A21A5C /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F17344331ECB752000A21A5C /* BucketList.xcdatamodel */,
+			);
+			currentVersion = F17344331ECB752000A21A5C /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F17344091ECB6B7000A21A5C /* Project object */;
 }
